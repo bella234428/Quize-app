@@ -1,9 +1,9 @@
-# * EARTHQUAKE QUIZ APP*
+# *QUIZ APP*
 
 
 ## *Description*
 
-The Earthquake Quiz App is a fun and educational tool designed to test and enhance users' knowledge about earthquakes. It offers a series of interactive questions that cover earthquake facts, safety tips, historical events, and more.
+The Quiz App is a fun and educational tool designed to test and enhance users' knowledge about earthquakes. It offers a series of interactive questions that cover earthquake facts, safety tips, historical events, and more.
 
 Whether you're a student, educator, or curious learner, this app helps reinforce awareness and preparedness through engaging quiz features.
 
