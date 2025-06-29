@@ -25,7 +25,7 @@ Whether you're a student, educator, or curious learner, this app helps reinforce
 
 HTML – for structuring the content
 
-CSS – for styling and layout
+CSS – for styling
 
 JavaScript – for quiz logic and interactivity
 
