@@ -9,15 +9,15 @@ Whether you're a student, educator, or curious learner, this app helps reinforce
 
 
 ## *Project Setup*
-✅ Multiple-choice questions on earthquake facts and safety
+Multiple-choice questions on earthquake facts and safety
 
-📊 Score tracking and result summary
+Score tracking and result summary
 
-🔁 Option to restart the quiz
+ option to restart the quiz
 
-📱 Responsive design for mobile and desktop
+ Responsive design for mobile and desktop
 
-🎨 Clean and intuitive user interface
+Clean and intuitive user interface
 
 ## *Programming Language used*
 
