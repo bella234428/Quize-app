@@ -104,7 +104,7 @@ const questions = [
 ];
 
 const questionElement = document.getElementById("question");
-const answerButton = document.getElementById("answers");
+const answerButtons = document.getElementById("answers");
 const nextButton = document.getElementById("bag");
 
 let currentQuestionIndex = 0;
@@ -118,6 +118,7 @@ function startQuiz(){
 }
 
 function showQuestion(){
+    resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex +1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.
@@ -127,7 +128,29 @@ function showQuestion(){
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("app");
-        answerButton.appendChild(button);
+        answerButtons.appendChild(button);
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
     });
+} 
+
+function resetState(){
+    nextButton.style.display = "none";
+    while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
 }
+
+function selectAnswer(e){
+    const selectApp = e.target;
+    const isCorrect = selectApp.dataset.correct === "true";
+    if(isCorrect){
+        selectApp.classList.add("correct");
+    }else{
+        selectedApp.classList.add("incorrect")
+    }
+}
+
 startQuiz();
