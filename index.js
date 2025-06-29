@@ -144,13 +144,20 @@ function resetState(){
 }
 
 function selectAnswer(e){
-    const selectApp = e.target;
-    const isCorrect = selectApp.dataset.correct === "true";
+    const selectedApp = e.target;
+    const isCorrect = selectedApp.dataset.correct === "true";
     if(isCorrect){
-        selectApp.classList.add("correct");
+        selectedApp.classList.add("correct");
     }else{
-        selectedApp.classList.add("incorrect")
+        selectedApp.classList.add("incorrect");
     }
+    Array.from(answerButtons.children).forEach(button => {
+        if(button.dataset.correct === "true"){
+            button.classList.add("correct");
+        }
+        button.disabled = true;
+    });
+    nextButton.style.display = "block";
 }
 
 startQuiz();
